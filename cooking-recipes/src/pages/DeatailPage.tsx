@@ -10,21 +10,7 @@ export default function DeatailPage({ data }: Props) {
   const { id } = useParams();
 
   const currentRecipe = data.find((item) => item.id === id);
-
   const ingredients = currentRecipe?.ingredients;
-
-  const ingredientsEntries = Object.entries(ingredients!);
-
-  // console.log(ingredientsEntries);
-
-  const ccc = ingredientsEntries[0];
-
-  const ddd = Object.entries(ccc);
-  // console.log(ddd[1][1]);
-
-  const sss=Object.entries((ddd[1][1]))
-  console.log(sss)
-
 
   return (
     <div className="container py-5">
@@ -50,15 +36,24 @@ export default function DeatailPage({ data }: Props) {
             <span className="fw-bold">Ingredients:</span>
           </p>
           <ul>
-            {/* {ingredientsEntries.map(([key, val]) => {
-              return <li>{`${key}:${val}`}</li>;
-            })} */}
+            {ingredients?.map((ing) => {
+              for (let [key, value] of Object.entries(ing)) {
+                return (
+                  <li key={`${Date.now()}-${key}-${value}`}>
+                    {key}: {value}
+                  </li>
+                );
+              }
+            })}
           </ul>
           <p>
             <span className="fw-bold">Preparation instructions:</span>{" "}
             {currentRecipe?.prepInstructions}
           </p>
         </div>
+      </div>
+      <div className="py-3 text-center">
+        <button className="btn btn-danger w-75">Remove recipe</button>
       </div>
     </div>
   );
