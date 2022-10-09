@@ -1,22 +1,19 @@
-import React, { useEffect, useState } from "react";
-import logo from "./logo.svg";
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
-
-type dataType = {
-  id: number;
-  name: string;
-};
+import Footer from "./components/Footer";
+import NavBar from "./components/NavBar";
+import DeatailPage from "./pages/DeatailPage";
+import HomePage from "./pages/HomePage";
 
 function App() {
-  useEffect(() => {
-    fetch("http://localhost:5000/item")
-      .then((res) => res.json())   
-      .then((data) => console.log(data));
-  }, []);
-
-
   return (
     <div className="App">
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/detail" element={<DeatailPage />} />
+      </Routes>
+      <Footer />
     </div>
   );
 }
