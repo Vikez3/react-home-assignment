@@ -18,15 +18,19 @@ function App() {
       .then((data) => dispatch(incrementByAmount(data)));
   }, []);
 
-  console.log(data);
-
   return (
     <div className="App">
       <NavBar />
-      <Routes>
-        <Route path="/" element={<HomePage data={data} />} />
-        <Route path="/detail" element={<DeatailPage />} />
-      </Routes>
+      {data.length > 0 ? (
+        <Routes>
+          <Route path="/" element={<HomePage data={data} />} />
+          <Route path="/detail/:id" element={<DeatailPage data={data} />} />
+        </Routes>
+      ) : (
+        <div className="container">
+          <h1>Loading...</h1>
+        </div>
+      )}
       <Footer />
     </div>
   );

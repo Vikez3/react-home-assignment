@@ -9,7 +9,7 @@ type Props = {
 export default function HomePage({data}: Props) {
   return (
     <div className="container py-5">
-      <div className="text-center">
+      <div className="text-center pb-3">
         <h1>Cooking Recipes</h1>
         <p>Try our tastey recipes and add your favourite ones.</p>
       </div>
