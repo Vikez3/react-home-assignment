@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
 
-type Props = {}
+type Props = {};
 
 export default function NavBar({}: Props) {
   return (
-    <div>navbar</div>
-  )
+    <div className="navbar p-2 bg-info">
+      <Link className="logo-text mx-3" to="/">
+        <p>Cooking Recipes</p>
+      </Link>
+    </div>
+  );
 }
