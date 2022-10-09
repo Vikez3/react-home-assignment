@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
+import AddRecipe from "./pages/AddRecipe";
 import DeatailPage from "./pages/DeatailPage";
 import HomePage from "./pages/HomePage";
 import { incrementByAmount } from "./redux/counter";
@@ -25,6 +26,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage data={data} />} />
           <Route path="/detail/:id" element={<DeatailPage data={data} />} />
+          <Route path="/addrecipe" element={<AddRecipe />} />
         </Routes>
       ) : (
         <div className="container">

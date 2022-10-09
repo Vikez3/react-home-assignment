@@ -9,6 +9,9 @@ export default function NavBar({}: Props) {
       <Link className="logo-text mx-3" to="/">
         <p>Cooking Recipes</p>
       </Link>
+      <Link to={"/addrecipe"} className="btn btn-primary ">
+        Add new recipe
+      </Link>
     </div>
   );
 }
