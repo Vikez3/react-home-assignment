@@ -1,17 +1,17 @@
+import { objectTraps } from "immer/dist/internal";
 import { useEffect, useState } from "react";
 import { RecipeType } from "../../data/types";
 import { incrementByAmount } from "../redux/counter";
-import { useAppDispatch, useAppSelector } from "../redux/hooks";
+import { useAppDispatch } from "../redux/hooks";
 
 type Props = {
   data: RecipeType[];
 };
 
 export default function AddRecipe({ data }: Props) {
-  const datadd = useAppSelector((state) => state.counter.value);
   const dispatch = useAppDispatch();
 
-  const [recipesData, setrecipesData] = useState(datadd);
+  const [recipesData, setrecipesData] = useState(data);
   const [ingredients, setIngerients] = useState([]);
   const [newRecipe, setNewRecipe] = useState<RecipeType>({
     id: Date.now().toString(),
@@ -49,8 +49,18 @@ export default function AddRecipe({ data }: Props) {
   }, [newRecipe]);
 
   useEffect(() => {
-    console.log(datadd);
+    dispatch(incrementByAmount(recipesData));
   }, [recipesData]);
+
+  const updateApiData = (dataObject: RecipeType) => {
+    fetch(`http://localhost:5000/recipes`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(dataObject),
+    })
+  };
 
   return (
     <div className="container py-5">
@@ -62,6 +72,7 @@ export default function AddRecipe({ data }: Props) {
             className="p-4"
             onSubmit={(e) => {
               e.preventDefault();
+              updateApiData(newRecipe);
               setNewRecipe({ ...newRecipe, id: Date.now().toString() });
               setrecipesData([...recipesData, newRecipe]);
               setNewRecipe({
@@ -73,7 +84,6 @@ export default function AddRecipe({ data }: Props) {
                 prepTime: 0,
                 prepInstructions: "",
               });
-              dispatch(incrementByAmount(recipesData));
             }}
           >
             {recipeValidation === true && (

@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
+import { RecipeType } from "../data/types";
 import "./App.css";
 import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
@@ -26,7 +27,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage data={data} />} />
           <Route path="/detail/:id" element={<DeatailPage data={data} />} />
-          <Route path="/addrecipe" element={<AddRecipe data={data}/>} />
+          <Route path="/addrecipe" element={<AddRecipe data={data} />} />
         </Routes>
       ) : (
         <div className="container">
