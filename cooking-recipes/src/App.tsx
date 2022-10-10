@@ -4,6 +4,7 @@ import { RecipeType } from "../data/types";
 import "./App.css";
 import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
+import NotFound from "./components/NotFound";
 import AddRecipe from "./pages/AddRecipe";
 import DeatailPage from "./pages/DeatailPage";
 import HomePage from "./pages/HomePage";
@@ -28,6 +29,7 @@ function App() {
           <Route path="/" element={<HomePage data={data} />} />
           <Route path="/detail/:id" element={<DeatailPage data={data} />} />
           <Route path="/addrecipe" element={<AddRecipe data={data} />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       ) : (
         <div className="container">

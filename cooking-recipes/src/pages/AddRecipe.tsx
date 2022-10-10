@@ -59,7 +59,11 @@ export default function AddRecipe({ data }: Props) {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(dataObject),
-    })
+    }).then((res) => {
+      if (res.status === 201) {
+        window.location.href = "http://localhost:3000/";
+      }
+    });
   };
 
   return (

@@ -1,123 +1,123 @@
 {
-    "recipes": [
+  "recipes": [
+    {
+      "id": "5f5eccf3e923d0aca3e7d41c",
+      "img": "https://cdn.pixabay.com/photo/2017/07/16/12/39/chicken-2509164_960_720.jpg",
+      "name": "Chicken Steak",
+      "recipeSource": "Hrana i vino",
+      "ingredients": [
         {
-            "id": "5f5eccf3e923d0aca3e7d41c",
-            "img": "https://cdn.pixabay.com/photo/2017/07/16/12/39/chicken-2509164_960_720.jpg",
-            "name": "Chicken Steak",
-            "recipeSource": "Hrana i vino",
-            "ingredients": [
-                {
-                    "meat": 400
-                },
-                {
-                    "cheese": 150
-                },
-                {
-                    "salt": 20
-                },
-                {
-                    "oil": 25
-                }
-            ],
-            "prepTime": 55,
-            "prepInstructions": "Rub the steak all over with a good lug of olive oil and a good pinch of sea salt and black pepper. Add the steak to a hot pan, then cook for 6 minutes for medium-rare, or to your liking, turning every minute. For more flavour, try one or a combination of the following… Halve a garlic clove and rub it over the steak every time you turn it. Rub the steak with a knob of butter the sweetness from the butter will make it taste divine!"
+          "meat": 400
         },
         {
-            "id": "5f5eccf3e923d0aca3e7d41b",
-            "img": "https://cdn.pixabay.com/photo/2019/03/10/13/32/food-4046229_960_720.jpg",
-            "name": "Omlette",
-            "recipeSource": "Brza Kujna",
-            "ingredients": [
-                {
-                    "eggs": 5
-                },
-                {
-                    "cheese": 100
-                },
-                {
-                    "salt": 20
-                },
-                {
-                    "oil": 25
-                }
-            ],
-            "prepTime": 15,
-            "prepInstructions": "Beat the eggs: Use two or three eggs per omelette, depending on how hungry you are. Beat the eggs lightly with a fork.Melt the butter: Use an 8-inch nonstick skillet for a 2-egg omelette, a 9-inch skillet for 3 eggs. Melt the butter over medium-low heat, and keep the temperature low and slow when cooking the eggs so the bottom doesn’t get too brown or overcooked.Add the eggs: Let the eggs sit for a minute, then use a heatproof silicone spatula to gently lift the cooked eggs from the edges of the pan. Tilt the pan to allow the uncooked eggs to flow to the edge of the pan.Fill the omelette: Add the filling—but don’t overstuff the omelette—when the eggs begin to set. Cook for a few more seconds,Fold and serve: Fold the omelette in half. Slide it onto a plate with the help of a silicone spatula."
+          "cheese": 150
         },
         {
-            "id": "5f5eccf3e923d0aca3e7d418",
-            "img": "https://cdn.pixabay.com/photo/2018/07/18/19/12/pasta-3547078_960_720.jpg",
-            "name": "Pasta",
-            "recipeSource": "Brza kujna",
-            "ingredients": [
-                {
-                    "pasta": 400
-                },
-                {
-                    "cheese": 150
-                },
-                {
-                    "salt": 20
-                },
-                {
-                    "ketchup": 50
-                }
-            ],
-            "prepTime": 35,
-            "prepInstructions": "Fill a large saucepan with water, put the lid on and bring to the boil over a high heat.Add a good pinch of sea salt.Once the water is boiling, stir in the pasta.Cook the pasta according to the packet instructions. To tell if your pasta is cooked, try a piece about a minute or so before the end of the cooking time. It’s ready when it’s soft enough to eat, but still has a bit of bite. The Italians say ‘al dente’.Scoop out a mugful of the starchy cooking water and set aside. This will help emulsify the pasta sauce."
+          "salt": 20
         },
         {
-            "id": "5f5eccf3e923d0aca3e7d41a",
-            "img": "https://cdn.pixabay.com/photo/2018/08/29/19/03/steak-3640560_960_720.jpg",
-            "name": "Beef Meat",
-            "recipeSource": "Hrana i vino",
-            "ingredients": [
-                {
-                    "meat": 400
-                },
-                {
-                    "salt": 20
-                },
-                {
-                    "oil": 25
-                },
-                {
-                    "potatoes": 500
-                },
-                {
-                    "peppers": 250
-                }
-            ],
-            "prepTime": 150,
-            "prepInstructions": "This technique brings us back to the grill, but unlike grilling, barbecuing uses low temperatures and wood smoke to cook cuts of beef slowly, over a period of eight hours or more. Like braising, the slow, low temperatures break down the connective tissues in tough cuts of beef. But unlike braising, barbecuing uses dry heat rather than moist. Because it uses smoke, barbecuing works best on a charcoal grill, where chunks of hardwood, like hickory, mesquite, apple, maple, or cherry, can be added to the charcoal. With a gas grill, this is possible, but you need a separate basket and it doesn't work quite the same.The best beef cuts for barbecue include brisket, ribs, and several cuts from the chuck primal. Even top round, eye of round, and tri-tip roasts can be cooked with smoke."
-        },
-        {
-            "id": "5f5eccf3e923d0aca3e7d420",
-            "img": "https://cdn.pixabay.com/photo/2016/04/04/17/22/meal-1307604_960_720.jpg",
-            "name": "Boil eggs",
-            "recipeSource": "Hrana i vino",
-            "ingredients": [
-                {
-                    "eggs": 4
-                }
-            ],
-            "prepTime": 7,
-            "prepInstructions": "Put eggs in water, boil 7 minutes and leave 2 minutes in hot water"
+          "oil": 25
         }
-    ],
-    "ingredients": [
-        "flour",
-        "milk",
-        "oil",
-        "salt",
-        "sugar",
-        "eggs",
-        "tomatoes",
-        "peppers",
-        "cheese",
-        "potatoes",
-        "meat",
-        "pasta",
-        "ketchup"
-    ]
+      ],
+      "prepTime": 55,
+      "prepInstructions": "Rub the steak all over with a good lug of olive oil and a good pinch of sea salt and black pepper. Add the steak to a hot pan, then cook for 6 minutes for medium-rare, or to your liking, turning every minute. For more flavour, try one or a combination of the following… Halve a garlic clove and rub it over the steak every time you turn it. Rub the steak with a knob of butter the sweetness from the butter will make it taste divine!"
+    },
+    {
+      "id": "5f5eccf3e923d0aca3e7d41b",
+      "img": "https://cdn.pixabay.com/photo/2019/03/10/13/32/food-4046229_960_720.jpg",
+      "name": "Omlette",
+      "recipeSource": "Brza Kujna",
+      "ingredients": [
+        {
+          "eggs": 5
+        },
+        {
+          "cheese": 100
+        },
+        {
+          "salt": 20
+        },
+        {
+          "oil": 25
+        }
+      ],
+      "prepTime": 15,
+      "prepInstructions": "Beat the eggs: Use two or three eggs per omelette, depending on how hungry you are. Beat the eggs lightly with a fork.Melt the butter: Use an 8-inch nonstick skillet for a 2-egg omelette, a 9-inch skillet for 3 eggs. Melt the butter over medium-low heat, and keep the temperature low and slow when cooking the eggs so the bottom doesn’t get too brown or overcooked.Add the eggs: Let the eggs sit for a minute, then use a heatproof silicone spatula to gently lift the cooked eggs from the edges of the pan. Tilt the pan to allow the uncooked eggs to flow to the edge of the pan.Fill the omelette: Add the filling—but don’t overstuff the omelette—when the eggs begin to set. Cook for a few more seconds,Fold and serve: Fold the omelette in half. Slide it onto a plate with the help of a silicone spatula."
+    },
+    {
+      "id": "5f5eccf3e923d0aca3e7d418",
+      "img": "https://cdn.pixabay.com/photo/2018/07/18/19/12/pasta-3547078_960_720.jpg",
+      "name": "Pasta",
+      "recipeSource": "Brza kujna",
+      "ingredients": [
+        {
+          "pasta": 400
+        },
+        {
+          "cheese": 150
+        },
+        {
+          "salt": 20
+        },
+        {
+          "ketchup": 50
+        }
+      ],
+      "prepTime": 35,
+      "prepInstructions": "Fill a large saucepan with water, put the lid on and bring to the boil over a high heat.Add a good pinch of sea salt.Once the water is boiling, stir in the pasta.Cook the pasta according to the packet instructions. To tell if your pasta is cooked, try a piece about a minute or so before the end of the cooking time. It’s ready when it’s soft enough to eat, but still has a bit of bite. The Italians say ‘al dente’.Scoop out a mugful of the starchy cooking water and set aside. This will help emulsify the pasta sauce."
+    },
+    {
+      "id": "5f5eccf3e923d0aca3e7d41a",
+      "img": "https://cdn.pixabay.com/photo/2018/08/29/19/03/steak-3640560_960_720.jpg",
+      "name": "Beef Meat",
+      "recipeSource": "Hrana i vino",
+      "ingredients": [
+        {
+          "meat": 400
+        },
+        {
+          "salt": 20
+        },
+        {
+          "oil": 25
+        },
+        {
+          "potatoes": 500
+        },
+        {
+          "peppers": 250
+        }
+      ],
+      "prepTime": 150,
+      "prepInstructions": "This technique brings us back to the grill, but unlike grilling, barbecuing uses low temperatures and wood smoke to cook cuts of beef slowly, over a period of eight hours or more. Like braising, the slow, low temperatures break down the connective tissues in tough cuts of beef. But unlike braising, barbecuing uses dry heat rather than moist. Because it uses smoke, barbecuing works best on a charcoal grill, where chunks of hardwood, like hickory, mesquite, apple, maple, or cherry, can be added to the charcoal. With a gas grill, this is possible, but you need a separate basket and it doesn't work quite the same.The best beef cuts for barbecue include brisket, ribs, and several cuts from the chuck primal. Even top round, eye of round, and tri-tip roasts can be cooked with smoke."
+    },
+    {
+      "id": "5f5eccf3e923d0aca3e7d420",
+      "img": "https://cdn.pixabay.com/photo/2016/04/04/17/22/meal-1307604_960_720.jpg",
+      "name": "Boil eggs",
+      "recipeSource": "Hrana i vino",
+      "ingredients": [
+        {
+          "eggs": 4
+        }
+      ],
+      "prepTime": 7,
+      "prepInstructions": "Put eggs in water, boil 7 minutes and leave 2 minutes in hot water"
+    }
+  ],
+  "ingredients": [
+    "flour",
+    "milk",
+    "oil",
+    "salt",
+    "sugar",
+    "eggs",
+    "tomatoes",
+    "peppers",
+    "cheese",
+    "potatoes",
+    "meat",
+    "pasta",
+    "ketchup"
+  ]
 }
