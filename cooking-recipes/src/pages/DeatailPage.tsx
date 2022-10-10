@@ -40,7 +40,7 @@ export default function DeatailPage({ data }: Props) {
               for (let [key, value] of Object.entries(ing)) {
                 return (
                   <li key={`${Date.now()}-${key}-${value}`}>
-                    {key}: {value}
+                    {key}: {value}gr
                   </li>
                 );
               }

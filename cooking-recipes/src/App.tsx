@@ -26,7 +26,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage data={data} />} />
           <Route path="/detail/:id" element={<DeatailPage data={data} />} />
-          <Route path="/addrecipe" element={<AddRecipe />} />
+          <Route path="/addrecipe" element={<AddRecipe data={data}/>} />
         </Routes>
       ) : (
         <div className="container">
