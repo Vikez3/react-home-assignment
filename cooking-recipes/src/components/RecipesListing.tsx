@@ -1,4 +1,3 @@
-import React from "react";
 import { RecipeType } from "../../data/types";
 import RecipeCard from "./RecipeCard";
 

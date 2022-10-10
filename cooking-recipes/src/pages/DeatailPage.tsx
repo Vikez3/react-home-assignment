@@ -5,7 +5,6 @@ import DeleteModal from "../components/Modal";
 import NotFound from "../components/NotFound";
 import { incrementByAmount } from "../redux/counter";
 import { useAppDispatch } from "../redux/hooks";
-import HomePage from "./HomePage";
 
 type Props = {
   data: RecipeType[];
@@ -44,7 +43,6 @@ export default function DeatailPage({ data }: Props) {
   };
 
   useEffect(() => {
-    console.log(newData);
     dispatch(incrementByAmount(newData));
   }, [newData]);
 

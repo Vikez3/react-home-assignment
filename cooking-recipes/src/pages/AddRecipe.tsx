@@ -1,4 +1,3 @@
-import { objectTraps } from "immer/dist/internal";
 import { useEffect, useState } from "react";
 import { RecipeType } from "../../data/types";
 import { incrementByAmount } from "../redux/counter";

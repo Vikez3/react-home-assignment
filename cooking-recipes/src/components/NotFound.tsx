@@ -1,7 +1,6 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
-const NotFound: React.FC = () => {
+function NotFound() {
   return (
     <div className="container py-5 text-center">
       <h3>You followed wrong path or recipe is deleted</h3>
@@ -10,6 +9,6 @@ const NotFound: React.FC = () => {
       </Link>
     </div>
   );
-};
+}
 
 export default NotFound;

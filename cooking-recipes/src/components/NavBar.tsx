@@ -1,9 +1,6 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
-type Props = {};
-
-export default function NavBar({}: Props) {
+export default function NavBar() {
   return (
     <div className="navbar p-2 bg-info">
       <Link className="logo-text mx-3" to="/">

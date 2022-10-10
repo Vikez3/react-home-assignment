@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
-import { RecipeType } from "../data/types";
 import "./App.css";
 import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
@@ -32,7 +31,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       ) : (
-        <div className="container">
+        <div className="container py-5">
           <h1>Loading...</h1>
         </div>
       )}
