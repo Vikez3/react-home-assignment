@@ -47,10 +47,6 @@ export default function AddRecipe({ data }: Props) {
     }
   }, [newRecipe]);
 
-  useEffect(() => {
-    dispatch(incrementByAmount(recipesData));
-  }, [recipesData]);
-
   const updateApiData = (dataObject: RecipeType) => {
     fetch(`http://localhost:5000/recipes`, {
       method: "POST",
@@ -75,6 +71,7 @@ export default function AddRecipe({ data }: Props) {
             className="p-4"
             onSubmit={(e) => {
               e.preventDefault();
+              dispatch(incrementByAmount(recipesData));
               updateApiData(newRecipe);
               setNewRecipe({ ...newRecipe, id: Date.now().toString() });
               setrecipesData([...recipesData, newRecipe]);
@@ -114,7 +111,10 @@ export default function AddRecipe({ data }: Props) {
                   className="form-control mt-2"
                   value={newRecipe.recipeSource}
                   onChange={(e) =>
-                    setNewRecipe({ ...newRecipe, recipeSource: e.target.value })
+                    setNewRecipe({
+                      ...newRecipe,
+                      recipeSource: e.target.value,
+                    })
                   }
                 />
               </div>

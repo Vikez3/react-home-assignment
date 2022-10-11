@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { RecipeType } from "../../data/types";
 import DeleteModal from "../components/Modal";
@@ -28,6 +28,7 @@ export default function DeatailPage({ data }: Props) {
       return item.id !== id;
     });
     setNewData(fillteredData);
+    dispatch(incrementByAmount(newData));
     handleCloseModal();
 
     fetch(`http://localhost:5000/recipes/${id}`, {
@@ -41,10 +42,6 @@ export default function DeatailPage({ data }: Props) {
       }
     });
   };
-
-  useEffect(() => {
-    dispatch(incrementByAmount(newData));
-  }, [newData]);
 
   if (currentRecipe) {
     return (
